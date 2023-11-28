@@ -19,7 +19,18 @@ class Gato < Animal
     end
 end
 
+class Cachorro < Animal
+    def latir
+        puts 'Au au'
+    end
+end
+
 gato = Gato.new
 gato.miar
 gato.dormir
 gato.pular
+
+cachorro = Cachorro.new
+cachorro.dormir
+cachorro.pular
+cachorro.latir

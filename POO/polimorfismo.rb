@@ -1,5 +1,6 @@
 # criar uma lista de objetos com a mesma função
 # escolhi como objeto coisa que escrevem: lápis, caneta, teclado.
+# quando os metodos são iguais é chamado de polimorfismo.
 
 class Objeto
     def escrever
@@ -19,10 +20,8 @@ class Caneta < Objeto
     end
 end
 
-class Teclado
-    def escrever
-        puts 'digitando...'
-    end
+class Teclado < Objeto
+
 end 
 
 lapis = Lapis.new
